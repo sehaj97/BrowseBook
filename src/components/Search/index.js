@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-function Search({data, setData}) {
+function Search({data, setData, errorMessage, setErrorMessage}) {
     const [query, setQuery] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
     function handleChange(e) {
         if (!e.target.value.length) {
             setErrorMessage(`${e.target.name} is required.`);
@@ -16,17 +15,26 @@ function Search({data, setData}) {
       }
       function handleSubmit(e) {
         e.preventDefault();
-        console.log("err",errorMessage);
-        console.log(query);
-        fetch(`http://openlibrary.org/search.json?title=${query}&fields=title,author_name,isbn,first_publish_year,availability&limit=10`)
-        .then(response => response.json()).then(dataObj => setData({dataObj}))
+        
+        if (!query) {
+            setErrorMessage(`input is required.`);
+          } else {
+            setErrorMessage('');
+            
+        try {
+            fetch(`http://openlibrary.org/search.json?title=${query}&fields=title,author_name,isbn,first_publish_year`)
+        .then(response => response.json())
+        .then(dataObj =>setData(dataObj))
+        }
+        catch(err){setErrorMessage("Error", err)}
+          }
       }
     return (
-        <div class="wrap">
+        <div className="wrap">
             
-            <form className="search" onSubmit={handleSubmit}>
-                <input type="text" className="searchTerm" placeholder="Search any book.." onChange={handleChange} name="query" />
-                <button className="searchButton" type="submit"><i className="fa fa-search"></i></button>
+            <form className="search" autoComplete="off" onSubmit={handleSubmit}>
+                <input type="text" className="searchTerm" placeholder="Search any book.." onChange={handleChange} name="input" />
+                <button className="searchButton" type="submit">SEARCH</button>
             </form>
         </div>
     );

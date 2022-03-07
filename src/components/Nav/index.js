@@ -1,9 +1,9 @@
 import React from 'react';
-import Search from '../Search';
+
 function Nav() {
     return (
-        <div class="topnav">
-            <a className="active" href="#home">LibData</a>
+        <div className="topnav">
+            <a className="title" href="#home">Open Library UI App</a>
         </div>
     );
 }
