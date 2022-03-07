@@ -1,12 +1,23 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Nav from './components/Nav';
+import Search from './components/Search';
 
 function App() {
+  
+  const [data, setData] = useState(null);
+  
+      
+  if(data){
+    console.log("dataobj: ",data);
+  };
   return (
     <div className="App">
-    <h1>Header</h1>
-    <h2>main</h2>
-    <h3>footer</h3>
+      <Nav/>
+      <Search 
+        data={data}
+        setData={setData}
+      />
     </div>
   );
 }
