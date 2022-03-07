@@ -25,12 +25,11 @@ function Cards ({data}){
                             className="img-fit"
                             key={book.title}
                         />
-                         {book.author_name && (<h3>By: {book.author_name[0]}</h3>)}
+                            {book.author_name && (<h3>By: {book.author_name[0]}</h3>)}
                             {book.first_publish_year && (<p>Published On: {book.first_publish_year}</p>)}
                             {book.isbn && (<p>isbn: {book.isbn[0]}</p>)}
                         </div>
                 </div>
-                    
             ))}
             </div>)}
         </>
