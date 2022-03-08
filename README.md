@@ -11,6 +11,12 @@
 
 
 # Deployed App Link
+[http://browsebook.herokuapp.com/](http://browsebook.herokuapp.com/)
+
+# Answers to Technical Questions
+
+Answers in  [./Answers_to_technical_questions.md](./Answers_to_technical_questions.md)
+
 
 ## Available Scripts
 
