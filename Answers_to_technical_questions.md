@@ -10,6 +10,7 @@ I would include the following functionality:
 - Show only limited books like 10 at first and provide a button functionality to view next 10 and so on.
 - Change to filter functionality to check box instead of buttons to revert the filter.
 - would store the api information for this app into a local storage in order to manipulate it with filters.
+-  need to add more tests
   
 ## What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 #### Logical assignment operator

@@ -26,3 +26,13 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### `npm run test`
+
+Runs tests in command line
+
+
+## Contributor
+* Sehajpreet Singh |
+  Contact email: sehajmagan@gmail.com |
+  GitHub: [Sehaj97](https://github.com/sehaj97)
