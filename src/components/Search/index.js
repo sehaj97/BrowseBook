@@ -24,7 +24,7 @@ function Search({setData, errorMessage, setErrorMessage, books, setBooks}) {
             setErrorMessage('');
                 
             try {
-                fetch(`http://openlibrary.org/search.json?title=${query}&fields=title,author_name,isbn,first_publish_year`)
+                fetch(`https://openlibrary.org/search.json?title=${query}&fields=title,author_name,isbn,first_publish_year`)
                 .then(response => response.json())
                 .then(dataObj =>
                     { 
@@ -41,7 +41,7 @@ function Search({setData, errorMessage, setErrorMessage, books, setBooks}) {
     function sortByTitle(e){
         e.preventDefault();
         try {
-            fetch(`http://openlibrary.org/search.json?title=${query}&fields=title,author_name,isbn,first_publish_year`)
+            fetch(`https://openlibrary.org/search.json?title=${query}&fields=title,author_name,isbn,first_publish_year`)
             .then(response => response.json())
             .then(dataObj =>
                 { 
@@ -61,7 +61,7 @@ function Search({setData, errorMessage, setErrorMessage, books, setBooks}) {
     function sortByDate(e){
         e.preventDefault();
         try {
-            fetch(`http://openlibrary.org/search.json?title=${query}&fields=title,author_name,isbn,first_publish_year`)
+            fetch(`https://openlibrary.org/search.json?title=${query}&fields=title,author_name,isbn,first_publish_year`)
             .then(response => response.json())
             .then(dataObj =>
                 { 
