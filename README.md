@@ -1,11 +1,11 @@
 # Description
 
- Application to can view a list of books matching or related to the user-submitted title.
+ Application to view a list of books matching or related to the user-submitted title.
 
 # Technologies Used
 
 - React Js
-- Jest
+- Jest react
 - HTML
 - CSS
 
