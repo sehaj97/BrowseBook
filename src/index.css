@@ -125,12 +125,23 @@ body {
 }
 
 /* Responsive columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
+  .wrap{
+    width: 90%;
+  }
+  
+
+.filters {
+  justify-content: space-evenly;
+  
+  width: 100%;
+
+}
 }
 /* Responsive columns */
 @media screen and  (min-width: 600px) and (max-width: 1000px) {
@@ -152,18 +163,4 @@ body {
   height:100%;
   width: 100%;
   object-fit: cover;
-}
-@media screen and (max-width: 480px) {
-  .wrap{
-    width: 90%;
-  }
-  
-
-.filters {
-  justify-content: space-evenly;
-  
-  width: 100%;
-
-}
-  
 }
