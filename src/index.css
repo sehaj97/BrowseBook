@@ -17,7 +17,6 @@ body {
 
 .topnav {
   background-color: #333;
-  position: fixed;
   top: 0;
   width: 100%;
   text-align: center
@@ -67,6 +66,32 @@ body {
   font-size: 20px;
 }
 
+
+.filterButton {
+  width:auto;
+  padding: 5px;
+  height: 100%;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
 /*Resize the wrap to see the search bar change!*/
 .wrap{
   width: 50%;
@@ -77,7 +102,9 @@ body {
 }
 
 .header{
-  margin-top:70px;
+  margin-top:20px;
+  
+  margin-bottom:90px;
 }
 /* Float four columns side by side */
 .column {
@@ -130,5 +157,13 @@ body {
   .wrap{
     width: 90%;
   }
+  
+
+.filters {
+  justify-content: space-evenly;
+  
+  width: 100%;
+
+}
   
 }
